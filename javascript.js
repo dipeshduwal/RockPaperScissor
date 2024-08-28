@@ -84,3 +84,16 @@ function playRound(humanChoice, computerChoice){
     }
 }
 
+//Write the logic to play the entire game
+function playGame(){
+    for(let roundCounter=0; roundCounter<5; roundCounter++ ){
+        const humanChoice = getHumanChoice();
+        const computerChoice = getComputerChoice();
+        playRound(humanChoice, computerChoice);
+    }
+
+    alert("User score is" + humanScore);
+    alert("Computer score is"+ computerScore);
+}
+
+playGame();
