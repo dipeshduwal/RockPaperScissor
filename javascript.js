@@ -38,9 +38,11 @@ function playRound(humanChoice, computerChoice){
                     break;
                 case 'scissor':
                     alert("Congratulations, You win!");
+                    humanScore += 1;
                     break;
                 case 'paper':
                     alert("Sorry. You Lose.");
+                    computerScore += 1;
                     break;
             }
         break;
@@ -49,12 +51,14 @@ function playRound(humanChoice, computerChoice){
             switch (computerChoice){
                 case 'rock':
                     alert("Sorry. You Lose.");
+                    computerScore += 1;
                     break;
                 case 'scissor':
                     alert("It is a tie");
                     break;
                 case 'paper':
                     alert("Congratulations, You win!");
+                    humanScore += 1;
                     break;
             }
         break;
@@ -63,9 +67,11 @@ function playRound(humanChoice, computerChoice){
             switch (computerChoice){
                 case 'rock':
                     alert("Congratulations, You win!");
+                    humanScore += 1;
                     break;
                 case 'scissor':
                     alert("Sorry. You lose.");
+                    computerScore += 1;
                     break;
                 case 'paper':
                     alert("It is a tie");
