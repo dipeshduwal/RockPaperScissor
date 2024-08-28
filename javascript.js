@@ -92,8 +92,16 @@ function playGame(){
         playRound(humanChoice, computerChoice);
     }
 
-    alert("User score is" + humanScore);
-    alert("Computer score is"+ computerScore);
+    alert(`User score is: ${humanScore}, Computer score is: ${computerScore}`);
+
+    if (humanScore === computerScore){
+        alert("The game is a draw.");
+    }else if (humanScore > computerScore){
+        alert("Congrats. You have won the game.");
+    }else {
+        alert("Sorry. You lost the game.");
+    }
+    
 }
 
 playGame();
