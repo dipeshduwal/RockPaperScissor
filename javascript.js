@@ -164,4 +164,21 @@ function updateChoices(playerSelection, computerSelection) {
     overlay.classList.remove('active')
   }
 
+  function setFinalMessage() {
+    return playerScore > computerScore
+      ? (endgameMsg.textContent = 'You won!')
+      : (endgameMsg.textContent = 'You lost...')
+  }
   
+  function restartGame() {
+    playerScore = 0
+    computerScore = 0
+    scoreInfo.textContent = 'Play Your Choice Again:'
+    scoreMessage.textContent = 'First to score 5 points wins the game'
+    playerScorePara.textContent = 'Player: 0'
+    computerScorePara.textContent = 'Computer: 0'
+    playerSign.textContent = '❔'
+    computerSign.textContent = '❔'
+    endgameModal.classList.remove('active')
+    overlay.classList.remove('active')
+  }
