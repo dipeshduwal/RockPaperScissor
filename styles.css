@@ -1,3 +1,21 @@
+:root {
+    --primary-light: #ddd;
+    --primary-dark: #461a10;
+    --secondary-dark: #321d19;
+    --secondary-dark-hover: #343943;
+    --secondary-dark-active: #5b5f68;
+    --header: #a53a35;
+    --primary-yellow: #faf8f5;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
 html {
     /* footer support */
     position: relative;
@@ -32,7 +50,7 @@ html {
   }
   
   .title {
-    font-size: 32px;
+    font-size: 42px;
     color: var(--primary-yellow);
     font-family: 'Press Start 2P', cursive;
   }
