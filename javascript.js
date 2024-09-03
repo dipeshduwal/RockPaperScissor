@@ -91,3 +91,42 @@ function handleClick(playerSelection) {
     setFinalMessage()
   }
 }
+
+function updateChoices(playerSelection, computerSelection) {
+    switch (playerSelection) {
+      case 'ROCK':
+        playerSign.textContent = '✊'
+        break
+      case 'PAPER':
+        playerSign.textContent = '✋'
+        break
+      case 'SCISSORS':
+        playerSign.textContent = '✌'
+        break
+    }
+  
+    switch (computerSelection) {
+      case 'ROCK':
+        computerSign.textContent = '✊'
+        break
+      case 'PAPER':
+        computerSign.textContent = '✋'
+        break
+      case 'SCISSORS':
+        computerSign.textContent = '✌'
+        break
+    }
+  }
+  
+  function updateScore() {
+    if (roundWinner === 'tie') {
+      scoreInfo.textContent = "It's a tie!"
+    } else if (roundWinner === 'player') {
+      scoreInfo.textContent = 'You won!'
+    } else if (roundWinner === 'computer') {
+      scoreInfo.textContent = 'You lost!'
+    }
+  
+    playerScorePara.textContent = `Player: ${playerScore}`
+    computerScorePara.textContent = `Computer: ${computerScore}`
+  }
