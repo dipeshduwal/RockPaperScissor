@@ -6,7 +6,7 @@ function getComputerChoice(){
     return computerChoices[randomizer];
 }
 
-//Write the logic to get the computer choice
+//Write the logic to get the human choice
 function getHumanChoice(){
     let choice = prompt("What is your choice?").toLowerCase();
 
