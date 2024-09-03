@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
     <link rel="stylesheet" href="styles.css" />
+    <script
+    src="https://kit.fontawesome.com/4c536a6bd5.js"
+    crossorigin="anonymous"
+  ></script>
 </head>
 <body>
     <header class="header">
@@ -12,9 +16,9 @@
       </header>
       <main class="main">
         <div class="scoreboard">
-          <h2 class="score-info" id="scoreInfo">Make Your Choice</h2>
+          <h2 class="score-info" id="scoreInfo">Play Your Choice:</h2>
           <h3 class="score-message" id="scoreMessage">
-            First to score 5 points wins the game
+            Player to score 5 points wins the game
           </h3>
           <div class="scores-container">
             <div class="score-box">
@@ -47,10 +51,13 @@
           </script>
           Dipesh Duwal
         </p>
+        <a href="https://github.com/dipeshduwal" target="_blank">
+            <i class="fab fa-github"></i
+          ></a>
       </footer>
       <div class="modal" id="endgameModal">
         <p class="modal-title" id="endgameMsg"></p>
-        <button class="btn btn-restart" id="restartBtn">Play again</button>
+        <button class="btn btn-restart" id="restartBtn">Play Again</button>
       </div>
       <div class="overlay" id="overlay"></div>
     <script src="javascript.js"></script>

@@ -50,9 +50,9 @@ html {
   }
   
   .title {
-    font-size: 42px;
+    font-size: 50px;
     color: var(--primary-yellow);
-    font-family: 'Press Start 2P', cursive;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
   
   /* MAIN */
@@ -104,7 +104,7 @@ html {
   
   .btn {
     border-radius: 10px;
-    background-color: var(--secondary-dark);
+    background-color: rgb(193, 54, 3);
   }
   
   .btn-square {
@@ -141,6 +141,15 @@ html {
     font-size: 20px;
   }
 
+  .fa-github {
+    color: var(--primary-light);
+    font-size: 24px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .fa-github:hover {
+    transform: rotate(360deg) scale(1.2);
+  }
 
 /* MODALS */
 

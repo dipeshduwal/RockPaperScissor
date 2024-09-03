@@ -92,6 +92,8 @@ function handleClick(playerSelection) {
   }
 }
 
+//Write logic to update players choices
+
 function updateChoices(playerSelection, computerSelection) {
     switch (playerSelection) {
       case 'ROCK':
@@ -117,14 +119,16 @@ function updateChoices(playerSelection, computerSelection) {
         break
     }
   }
+
+  //Write logic to update scores
   
   function updateScore() {
     if (roundWinner === 'tie') {
       scoreInfo.textContent = "It's a tie!"
     } else if (roundWinner === 'player') {
-      scoreInfo.textContent = 'You won!'
+      scoreInfo.textContent = 'You have won this round!'
     } else if (roundWinner === 'computer') {
-      scoreInfo.textContent = 'You lost!'
+      scoreInfo.textContent = 'You have lost this round!'
     }
   
     playerScorePara.textContent = `Player: ${playerScore}`
@@ -166,15 +170,15 @@ function updateChoices(playerSelection, computerSelection) {
 
   function setFinalMessage() {
     return playerScore > computerScore
-      ? (endgameMsg.textContent = 'You won!')
-      : (endgameMsg.textContent = 'You lost...')
+      ? (endgameMsg.textContent = 'Yayy! You won the game!')
+      : (endgameMsg.textContent = 'Oh No! You lost the game.')
   }
   
   function restartGame() {
     playerScore = 0
     computerScore = 0
     scoreInfo.textContent = 'Play Your Choice Again:'
-    scoreMessage.textContent = 'First to score 5 points wins the game'
+    scoreMessage.textContent = 'Player to score 5 points wins the game'
     playerScorePara.textContent = 'Player: 0'
     computerScorePara.textContent = 'Computer: 0'
     playerSign.textContent = '❔'
